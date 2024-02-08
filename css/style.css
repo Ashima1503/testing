@@ -935,7 +935,29 @@ flex: 0 0 100%;
       font-size: 30px;
   }
 }
-
+@media(max-width: 550px){
+  .home h1{
+      font-size: 30px;
+  }
+  .home .go-down {
+      display: none; /* Hide the go-down button on smaller screens */
+  }
+  .about .content .box,
+  .service .content .box,
+  .classes .content .box,
+  .start-today .content .box,
+  .schedule .content .box,
+  .gallery .content .box,
+  .price-package .content .box,
+  .contact .content .box {
+    flex: 0 0 100%;
+    max-width: 100%;
+    padding: 15px;
+  }
+  .contact .content .form button {
+    padding: 8px 20px; /* Adjust button padding for smaller screens */
+  }
+}
 
 /*flex*/
 /* .main{
